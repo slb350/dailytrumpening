@@ -1,0 +1,6 @@
+# Ignore all log, temp, and the bane that is the ds_store
+/log/*.log
+/tmp
+.DS_Store
+.DS_Store?
+._*
