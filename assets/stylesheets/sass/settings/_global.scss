@@ -1,0 +1,45 @@
+// Make the 'base' color the default value
+$palette-key: 'base' !default;
+
+@function palette($color-name, $color-variant: $palette-key) {
+    //make the variant optional
+    @if ($color-variant != null) {
+        @return map-get(map-get($color-palette, $color-name), $color-variant);
+    } @else {
+        @return map-get($color-palette, $color-name);
+    }
+}
+
+$color-palette : (
+    white: (
+        base: #fff
+    ),
+
+    black: (
+        base: #000
+    ),
+
+    grey: (
+        xdark: #424A56,
+        dark: #666,
+        base: #ccc,
+        light: #E8ECF1,
+    ),
+
+    blue: (
+      dark: darken(#4698DC, 10%),
+      base: #4698DC,
+      light: lighten(#4698DC, 10%),
+    ),
+
+    red: (
+        dark: darken(#bb1a2e, 10%),
+        base: #bb1a2e,
+        light: lighten(#bb1a2e, 10%)
+    )
+);
+
+
+/* Default Values
+-----------------------------*/
+$border-radius--default: 2px;

@@ -1,0 +1,22 @@
+@each $text-color, $color in $color-palette {
+    .u-textColor--#{$text-color} {
+        color: map-get($color, base) !important;
+    }
+    .u-bgColor--#{$text-color} {
+        background-color: map-get($color, base) !important;
+    }
+    .u-borderColor--#{$text-color} {
+        border-color: map-get($color, base) !important;
+    }
+    @each $variant, $tone in $color {
+        .u-textColor--#{$text-color}-#{$variant} {
+            color: $tone !important;
+        }
+        .u-bgColor--#{$text-color}-#{$variant} {
+            background-color: $tone !important;
+        }
+        .u-borderColor--#{$text-color}-#{$variant} {
+            border-color: $tone !important;
+        }
+    }
+}

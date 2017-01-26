@@ -1,4 +1,17 @@
 //out: ../index.css
 
 /*Import All The Partials*/
-@import './utilities/_text'
+
+/* SETTINGS
+----------------------------------*/
+@import './settings/_global';
+
+/* UTILITIES
+----------------------------------*/
+@import './utilities/_color';
+@import './utilities/_text';
+
+/* COMPONENTS
+----------------------------------*/
+@import './components/_header';
+@import './components/_list';

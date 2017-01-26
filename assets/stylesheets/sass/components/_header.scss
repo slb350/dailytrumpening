@@ -1,0 +1,12 @@
+.c-header {
+
+  &--haired {
+    position: relative;
+    &:before {
+      content: url(../images/hair.svg) !important;
+      position: absolute;
+      left: -15px;
+      top: -10px;
+    }
+  }
+}
