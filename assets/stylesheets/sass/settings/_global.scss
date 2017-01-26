@@ -16,7 +16,8 @@ $color-palette : (
     ),
 
     black: (
-        base: #000
+        base: #000,
+        light: lighten(#000, 25%)
     ),
 
     grey: (
