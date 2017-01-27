@@ -1,0 +1,24 @@
+.c-btn--circle {
+  border-radius: 50%;
+}
+
+.c-btn--sm {
+  height: 25px;
+  width: 25px;
+  font-size: 12px;
+}
+
+.c-btn--lg {
+  height: 55px;
+  width: 55px;
+  font-size: 25px;
+}
+
+.c-btn__icon {
+  vertical-align: middle;
+}
+
+.c-socialBtn--twitter {
+  background-color: #00aced;
+  border: 1px solid palette(white);
+}
