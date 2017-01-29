@@ -25,6 +25,7 @@
   background-color: #00aced;
   border: 1px solid palette(white);
   transition: .5s ease all;
+  z-index: 999999999999;
 
   &:hover {
     transform: rotate(360deg);
