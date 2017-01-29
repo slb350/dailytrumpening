@@ -26,8 +26,16 @@
   border: 1px solid palette(white);
   transition: .5s ease all;
   z-index: 999999999999;
+  right: 10vw;
 
   &:hover {
     transform: rotate(360deg);
+  }
+}
+
+
+@media screen and (mx-width: 980px) {
+  .c-socialBtn--twitter {
+    right: 0 !important;
   }
 }
