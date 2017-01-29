@@ -19,6 +19,14 @@
 }
 
 .c-socialBtn--twitter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #00aced;
   border: 1px solid palette(white);
+  transition: .5s ease all;
+
+  &:hover {
+    transform: rotate(360deg);
+  }
 }
