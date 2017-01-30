@@ -1,3 +1,4 @@
+
 // Make the 'base' color the default value
 $palette-key: 'base' !default;
 
@@ -25,12 +26,14 @@ $color-palette : (
         dark: #666,
         base: #ccc,
         light: #E8ECF1,
+        xlight: #f7f7f7
     ),
 
     blue: (
       dark: darken(#4698DC, 10%),
       base: #4698DC,
       light: lighten(#4698DC, 10%),
+      twitter: #00aced,
     ),
 
     red: (

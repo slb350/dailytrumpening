@@ -1,0 +1,20 @@
+.app-container {
+  position: relative;
+  border-radius: 2px;
+  background: palette(white);
+  overflow-y: scroll;
+}
+
+.app-container--md {
+  max-width: 750px;
+  padding: 10px 25px;
+}
+
+.app-container--center {
+  display: block;
+  margin: 0 auto;
+}
+
+.app-container--shadowed {
+  box-shadow: -1px 1px 2px 0 palette(grey);
+}

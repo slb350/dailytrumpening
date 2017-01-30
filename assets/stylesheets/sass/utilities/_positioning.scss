@@ -1,0 +1,452 @@
+/* Position declarations
+-----------------------------*/
+.u-position--relative {
+  position: relative !important;
+}
+
+.u-position--fixed {
+  position: fixed !important;
+}
+
+.u-position--absolute {
+  position: absolute !important;
+}
+
+
+/* Center Positioning
+-----------------------------*/
+.u-center--horizontal {
+    margin: 0 auto !important;
+}
+
+.u-center--vertical {
+    vertical-align: middle !important;
+}
+
+/* Padding Resets
+-----------------------------*/
+.u-padding--none {
+  padding: 0 !important;
+}
+
+
+.u-paddingV--none {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.u-paddingH--none {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.u-paddingTop--none {
+    padding-top: 0 !important;
+}
+
+.u-paddingBottom--none {
+    padding-bottom: 0 !important;
+}
+
+.u-paddingLeft--none {
+    padding-left: 0 !important;
+}
+
+.u-paddingRight--none {
+    padding-right: 0 !important;
+}
+
+/* Full Padding Utilities
+-----------------------------*/
+.u-padding--xs { padding: 2px !important; }
+
+.u-padding--sm { padding: 5px !important; }
+
+.u-padding--md { padding: 10px !important; }
+
+.u-padding--lg { padding: 15px !important; }
+
+.u-padding--xl { padding: 20px !important; }
+
+.u-padding--xxl { padding: 25px !important; }
+
+/* Vertical Padding Utilities
+-----------------------------*/
+.u-paddingV--xs {
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+}
+
+.u-paddingV--sm {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+
+.u-paddingV--md {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+.u-paddingV--lg {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+}
+
+.u-paddingV--xl {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}
+
+.u-paddingV--xxl {
+    padding-top: 25px !important;
+    padding-bottom: 25px !important;
+}
+
+/* Horizontal Padding Utilities
+-----------------------------*/
+.u-paddingH--xs {
+    padding-left: 2px !important;
+    padding-right: 2px !important;
+}
+
+.u-paddingH--sm {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+.u-paddingH--md {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+.u-paddingH--lg {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.u-paddingH--xl {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.u-paddingH--xxl {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+}
+
+
+/* Top Padding Utilities
+-----------------------------*/
+.u-paddingTop--xs {
+    padding-top: 2px !important;
+}
+
+.u-paddingTop--sm {
+    padding-top: 5px !important;
+}
+
+.u-paddingTop--md {
+    padding-top: 10px !important;
+}
+
+.u-paddingTop--lg {
+    padding-top: 15px !important;
+}
+
+.u-paddingTop--xl {
+    padding-top: 20px !important;
+}
+
+.u-paddingTop--xxl {
+    padding-top: 25px !important;
+}
+
+/* Bottom Padding Utilities
+-----------------------------*/
+.u-paddingBottom--xs {
+    padding-bottom: 2px !important;
+}
+
+.u-paddingBottom--sm {
+    padding-bottom: 5px !important;
+}
+
+.u-paddingBottom--md {
+    padding-bottom: 10px !important;
+}
+
+.u-paddingBottom--lg {
+    padding-bottom: 15px !important;
+}
+
+.u-paddingBottom--xl {
+    padding-bottom: 20px !important;
+}
+
+.u-paddingBottom--xxl {
+    padding-bottom: 25px !important;
+}
+
+/* Left Padding Utilities
+-----------------------------*/
+.u-paddingLeft--xs {
+    padding-left: 2px !important;
+}
+
+.u-paddingLeft--sm {
+    padding-left: 5px !important;
+}
+
+.u-paddingLeft--md {
+    padding-left: 10px !important;
+}
+
+.u-paddingLeft--lg {
+    padding-left: 15px !important;
+}
+
+.u-paddingLeft--xl {
+    padding-left: 20px !important;
+}
+
+.u-paddingLeft--xxl {
+    padding-left: 25px !important;
+}
+
+/* Right Padding Utilities
+-----------------------------*/
+.u-paddingRight--xs {
+    padding-left: 2px !important;
+}
+
+.u-paddingRight--sm {
+    padding-right: 5px !important;
+}
+
+.u-paddingRight--md {
+    padding-right: 10px !important;
+}
+
+.u-paddingRight--lg {
+    padding-right: 15px !important;
+}
+
+.u-paddingRight--xl {
+    padding-right: 20px !important;
+}
+
+.u-paddingRight--xxl {
+    padding-right: 25px !important;
+}
+
+
+
+/* Margin Resets
+-----------------------------*/
+.u-margin--none {
+    margin: 0 !important;
+}
+
+.u-marginV--none {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.u-marginH--none {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.u-marginTop--none {
+    margin-top: 0 !important;
+}
+
+.u-marginBottom--none {
+    margin-bottom: 0 !important;
+}
+
+/* Full Margin Utilities
+-----------------------------*/
+.u-margin--xs { margin: 2px !important; }
+
+.u-margin--sm { margin: 5px !important; }
+
+.u-margin--md { margin: 10px !important; }
+
+.u-margin--lg { margin: 15px !important; }
+
+.u-margin--xl { margin: 20px !important; }
+
+
+/* Vertical Margin Utilities
+-----------------------------*/
+.u-marginV--xs {
+    margin-top: 2px !important;
+    margin-bottom: 2px !important;
+}
+
+.u-marginV--sm {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+}
+
+.u-marginV--md {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+.u-marginV--lg {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+}
+
+.u-marginV--xl {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+/* Horizontal Margin Utilities
+-----------------------------*/
+.u-marginH--xs {
+    margin-left: 2px !important;
+    margin-right: 2px !important;
+}
+
+.u-marginH--sm {
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+}
+
+.u-marginH--md {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+}
+
+.u-marginH--lg {
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+}
+
+.u-marginH--xl {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+}
+
+/* Top Margin Utilities
+-----------------------------*/
+.u-marginTop--xs {
+    margin-top: 2px !important;
+}
+
+.u-marginTop--sm {
+    margin-top: 5px !important;
+}
+
+.u-marginTop--md {
+    margin-top: 10px !important;
+}
+
+.u-marginTop--lg {
+    margin-top: 15px !important;
+}
+
+.u-marginTop--xl {
+    margin-top: 20px !important;
+}
+
+.u-marginTop--xxl {
+    margin-top: 25px !important;
+}
+
+.u-marginTop--mega {
+    margin-top: 50px !important;
+}
+
+/* Bottom Margin Utilities
+-----------------------------*/
+.u-marginBottom--xs {
+    margin-bottom: 2px !important;
+}
+
+.u-marginBottom--sm {
+    margin-bottom: 5px !important;
+}
+
+.u-marginBottom--md {
+    margin-bottom: 10px !important;
+}
+
+.u-marginBottom--lg {
+    margin-bottom: 15px !important;
+}
+
+.u-marginBottom--xl {
+    margin-bottom: 20px !important;
+}
+
+.u-marginBottom--xxl {
+    margin-bottom: 25px !important;
+}
+
+.u-marginBottom--mega {
+    margin-bottom: 50px !important;
+}
+
+/* Left Margin Utilities
+-----------------------------*/
+.u-marginLeft--none {
+    margin-left: 0 !important;
+}
+
+.u-marginLeft--xs {
+    margin-left: 2px !important;
+}
+
+.u-marginLeft--sm {
+    margin-left: 5px !important;
+}
+
+.u-marginLeft--md {
+    margin-left: 10px !important;
+}
+
+.u-marginLeft--lg {
+    margin-left: 15px !important;
+}
+
+.u-marginLeft--xl {
+    margin-left: 20px !important;
+}
+
+/* Right Margin Utilities
+-----------------------------*/
+.u-marginRight--xs {
+    margin-right: 2px !important;
+}
+
+.u-marginRight--sm {
+    margin-right: 5px !important;
+}
+
+.u-marginRight--md {
+    margin-right: 10px !important;
+}
+
+.u-marginRight--lg {
+    margin-right: 15px !important;
+}
+
+.u-marginRight--xl {
+    margin-right: 20px !important;
+}
+
+/* Positioning Resets
+-----------------------------*/
+.u-left--none {
+  left: 0 !important;
+
+}
+
+.u-right--none {
+  right: 0 !important;
+}  
