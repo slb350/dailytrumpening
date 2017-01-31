@@ -32,6 +32,11 @@ window.addEventListener('load', function () {
             events: {},
             filteredEvents: {},
         },
+        computed: {
+            filteredEventCount: function(){
+                return Object.keys(this.filteredEvents).length;
+            }
+        },
         methods: {
             filterClick: function(event){
                 var period = event.target.dataset.period;

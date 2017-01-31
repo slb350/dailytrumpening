@@ -54,6 +54,7 @@
               <div v-for="(day, date) in filteredEvents">
                 <day v-bind:date="date" v-bind:items="day"></day>
               </div>
+              <div v-if="filteredEventCount == 0" class="alert alert-warning">Nothing yet...but don't worry, there's always more and it's always worse.</div>
           </div>
         </div>
     </div>
