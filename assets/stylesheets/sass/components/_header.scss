@@ -1,8 +1,10 @@
 .c-header {
+  position: relative;
 
   &--haired {
     position: relative;
     &:before {
+      transition: .3s ease all;
       content: url(../images/hair.svg) !important;
       position: absolute;
       left: -10px;
@@ -10,3 +12,44 @@
     }
   }
 }
+
+  .c-header__small {
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .c-header__small--topLeft {
+    position: absolute;
+    top: -10px;
+  }
+
+  .c-header__sublink {
+    color: palette(white);
+
+    &.has-fist {
+      &:before {
+        font-family: 'fontAwesome';
+        content: '\f255';
+        margin-right: 5px;
+      }
+    }
+
+    &:hover {
+      transition: .3s ease all;
+      text-decoration: none;
+      color: palette(blue, light);
+    }
+  }
+
+  // Put hair on the right on small screens
+  @media screen and (max-width: 768px) {
+    .c-header--haired{
+
+      &:before {
+        top: -11px;
+        right: -10px;
+        left: initial;
+        transform: rotate(360deg )scaleX(-1);
+      }
+    }
+  }
