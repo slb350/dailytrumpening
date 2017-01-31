@@ -54,7 +54,9 @@ window.addEventListener('load', function () {
 
                 switch(period){
                     case 'today':
-                        this.filteredEvents[date.format("MMMM DD, YYYY")] = this.events[year][month][day].items;
+                        if(this.events[year][month][day]){
+                            this.filteredEvents[date.format("MMMM DD, YYYY")] = this.events[year][month][day].items;
+                        }
                         break;
                     case 'week':
                         var firstDate = moment(date).subtract(date.day(), 'days');
@@ -69,39 +71,47 @@ window.addEventListener('load', function () {
 
                         for(var day in this.events[firstYear][firstMonth]){
                             day = parseInt(day);
-                            var dayItem = this.events[firstYear][firstMonth][day];
-                            var itemDate = dayItem.date;
-                            if(day >= firstDay && (day <= lastDay || firstMonth != lastMonth)){
-                                this.filteredEvents[itemDate.format("MMMM DD, YYYY")] = dayItem.items;
+                            if(this.events[firstYear][firstMonth][day]){
+                                var dayItem = this.events[firstYear][firstMonth][day];
+                                var itemDate = dayItem.date;
+                                if(day >= firstDay && (day <= lastDay || firstMonth != lastMonth)){
+                                    this.filteredEvents[itemDate.format("MMMM DD, YYYY")] = dayItem.items;
+                                }
                             }
                         }
                         // Account for weeks that span 2 months
                         if(firstYear != lastYear || firstMonth != lastMonth){
                             for(var day in this.events[lastYear][lastMonth]){
                                 day = parseInt(day);
-                                var dayItem = this.events[lastYear][lastMonth][day];
-                                var itemDate = dayItem.date;
-                                if(day >= 1 && (day <= lastDay || firstMonth != lastMonth)){
-                                    this.filteredEvents[itemDate.format("MMMM DD, YYYY")] = dayItem.items;
+                                if(this.events[lastYear][lastMonth][day]){
+                                    var dayItem = this.events[lastYear][lastMonth][day];
+                                    var itemDate = dayItem.date;
+                                    if(day >= 1 && (day <= lastDay || firstMonth != lastMonth)){
+                                        this.filteredEvents[itemDate.format("MMMM DD, YYYY")] = dayItem.items;
+                                    }
                                 }
                             }
                         }
                         break;
                     case 'month':
-                        for(var day in this.events[year][month]){
-                            day = parseInt(day);
-                            var dayItem = this.events[year][month][day];
-                            var itemDate = dayItem.date;
-                            this.filteredEvents[itemDate.format("MMMM DD, YYYY")] = dayItem.items;
+                        if(this.events[year][month]){
+                            for(var day in this.events[year][month]){
+                                day = parseInt(day);
+                                var dayItem = this.events[year][month][day];
+                                var itemDate = dayItem.date;
+                                this.filteredEvents[itemDate.format("MMMM DD, YYYY")] = dayItem.items;
+                            }
                         }
                         break;
                     case 'year':
-                        for(var currentMonth in this.events[year]){
-                            var monthItem = this.events[year][currentMonth];
-                            for(var day in monthItem){
-                                var dayItem = this.events[year][currentMonth][day];
-                                var itemDate = dayItem.date;
-                                this.filteredEvents[itemDate.format("MMMM DD, YYYY")] = dayItem.items;
+                        if(this.events[year]){
+                            for(var currentMonth in this.events[year]){
+                                var monthItem = this.events[year][currentMonth];
+                                for(var day in monthItem){
+                                    var dayItem = this.events[year][currentMonth][day];
+                                    var itemDate = dayItem.date;
+                                    this.filteredEvents[itemDate.format("MMMM DD, YYYY")] = dayItem.items;
+                                }
                             }
                         }
                         break;
