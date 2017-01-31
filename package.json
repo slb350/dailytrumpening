@@ -1,20 +1,21 @@
 {
-  "name": "daily-trumpening",
-  "version": "0.1.0",
-  "description": "Political news and current events surrounding POTUS (President of the United States) Donald Trump (potus and realdonaldtrump on Twitter).",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/slb350/dailytrumpening"
-  },
-  "author": "Stephen Brandon",
-  "license": "BSD-2-Clause",
-  "bugs": {
-    "url": "https://github.com/slb350/dailytrumpening/issues"
-  },
-  "devDependencies": {
-    "grunt-contrib-watch": "~0.6.1",
-    "grunt-contrib-uglify": "~0.9.2",
-    "grunt-contrib-concat": "~0.5.1",
-    "grunt": "~1.0.1"
-  }
+    "name": "daily-trumpening",
+    "version": "0.1.0",
+    "description": "Political news and current events surrounding POTUS (President of the United States) Donald Trump (potus and realdonaldtrump on Twitter).",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/slb350/dailytrumpening"
+    },
+    "author": "Stephen Brandon",
+    "license": "BSD-2-Clause",
+    "bugs": {
+        "url": "https://github.com/slb350/dailytrumpening/issues"
+    },
+    "devDependencies": {
+        "gulp-concat": "latest",
+        "gulp-sass": "latest",
+        "gulp-uglify": "latest",
+        "gulp-minify-css": "latest",
+        "gulp": "latest"
+    }
 }
