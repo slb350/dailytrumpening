@@ -12,6 +12,9 @@
         "url": "https://github.com/slb350/dailytrumpening/issues"
     },
     "devDependencies": {
+        "gulp-sourcemaps": "latest",
+        "gulp-babel": "latest",
+        "babel-preset-es2015": "latest",
         "gulp-concat": "latest",
         "gulp-sass": "latest",
         "gulp-uglify": "latest",
