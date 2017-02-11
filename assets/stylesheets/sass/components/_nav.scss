@@ -5,5 +5,10 @@
         display: inline-block;
         margin: 0 auto;
         float: none;
+
+        a.active{
+            font-weight: bold;
+            color: #000;
+        }
     }
 }
