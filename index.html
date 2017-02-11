@@ -13,6 +13,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="trumpings.json.js"></script>
+    <script src="./assets/js/vendor.min.js"></script>
     <script src="./assets/js/app.min.js"></script>
     <script type="text/javascript" src="./assets/javascript/tab_changer.js">
     </script>
@@ -40,12 +41,12 @@
     <div id="app">
         <nav class="navbar navbar-default">
           <div class="container-fluid">
-              <ul class="nav navbar-nav" id="period">
-                <li><a href="#today" data-period="today" v-on:click="filterClick">Today</a></li>
-                <li><a href="#week" data-period="week" v-on:click="filterClick">This Week</a></li>
-                <li><a href="#month" data-period="month" v-on:click="filterClick">This Month</a></li>
-                <li><a href="#year" data-period="year" v-on:click="filterClick">This Year</a></li>
-              </ul>
+              <filters>
+                  <filter-item period="today" :selected="true"></filter-item>
+                  <filter-item period="week"></filter-item>
+                  <filter-item period="month"></filter-item>
+                  <filter-item period="year"></filter-item>
+              </filters>
           </div>
         </nav>
 
