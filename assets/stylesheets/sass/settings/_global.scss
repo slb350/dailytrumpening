@@ -47,3 +47,7 @@ $color-palette : (
 /* Default Values
 -----------------------------*/
 $border-radius--default: 2px;
+
+[v-cloak] {
+  display: none;
+}
