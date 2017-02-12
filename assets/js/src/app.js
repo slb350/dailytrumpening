@@ -83,7 +83,7 @@ window.addEventListener('load', function () {
                             if(app.startDate.isSame(app.endDate)){
                                 return val.date.isSame(date, 'd');
                             }
-                            return val.date.isBetween(app.startDate, app.endDate);
+                            return val.date.isBetween(app.startDate, app.endDate, 'd', '[]');
                         });
                     break;
                     default:
