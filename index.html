@@ -12,13 +12,13 @@
     <script src="https://use.fontawesome.com/e3d14084a4.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="./assets/js/vendor.min.js"></script>
+    <script src="./assets/js/vendor/moment.min.js"></script>
+    <script src="./assets/js/vendor/vue.min.js"></script>
+    <script type="text/javascript" src="./assets/js/vendor/daterangepicker.js"></script>
     <script src="./assets/js/app.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/stylesheets/vendor/daterangepicker.css" />
     <script type="text/javascript" src="./assets/javascript/tab_changer.js">
     </script>
-
   </head>
   <body>
     <div class="jumbotron u-bgColor--blue-dark u-margin--none">
@@ -45,8 +45,8 @@
               <div class="form-group">
                   <label for="sort" class="form-label">Showing</label>
                   <select class="form-control" name="sort" v-model="sortOrder" @change="sortItems">
-                      <option value="desc">Latest</option>
                       <option value="asc">Earliest</option>
+                      <option value="desc">Latest</option>
                   </select>
               </div>
               <div class="form-group">
@@ -61,12 +61,12 @@
           </div>
         </nav>
 
-        <div id="content" class="editable container-fluid u-paddingV--lg u-bgColor--grey-xlight">
+        <div id="content" class="editable container-fluid u-paddingV--lg u-bgColor--grey-xlight" v-cloak>
           <div class="app-container app-container--md app-container--center app-container--shadowed">
               <div v-for="day in filteredEvents">
                 <day v-bind:date="day.date" v-bind:items="day.items"></day>
               </div>
-              <div v-if="filteredEventCount == 0" v-cloak class="alert alert-warning">Nothing yet...but don't worry, there's always more and it's always worse.</div>
+              <div v-if="filteredEventCount == 0" class="alert alert-warning">Nothing yet...but don't worry, there's always more and it's always worse.</div>
           </div>
         </div>
     </div>
