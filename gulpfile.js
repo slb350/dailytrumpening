@@ -15,13 +15,6 @@ gulp.task('styles', function () {
 });
 
 gulp.task('scripts', function() {
-    gulp.src(['./assets/js/src/vendor/**/*.js'])
-        .pipe(sourcemaps.init('.'))
-        .pipe(concat('vendor.min.js'))
-        .pipe(uglify())
-        .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('assets/js'));
-
     gulp.src(['./assets/js/src/*.js'])
         .pipe(sourcemaps.init('.'))
         .pipe(babel({

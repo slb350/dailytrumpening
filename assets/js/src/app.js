@@ -11,7 +11,7 @@ window.addEventListener('load', function () {
       props: ['items', 'date'],
       computed: {
           formattedDate: function(){
-              return moment(this.date).format("MMMM DD, YYYY");
+              return this.date.format("MMMM DD, YYYY");
           }
       }
     })
